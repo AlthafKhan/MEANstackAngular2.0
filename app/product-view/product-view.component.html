@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-11">
+            <h2>{{event?.productName}} </h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div><strong>Code:</strong> {{event?.productCode}}</div>
+            <div><strong>Price:</strong> ${{event?.productCost}}</div>
+            <div><strong>Description:</strong> {{event?.productDescription}}</div>
+        </div>
+    </div>
+    <div>
+        <button (click)="back()" class="btn btn-default">Back</button>
+    </div>
+</div>

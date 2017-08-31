@@ -1,0 +1,16 @@
+<div class="row">
+    <div *ngFor ="let event of events" class="col-md-5">
+        <div [routerLink]="['/events', event.id]" class='well hoverwell thumbnail'>
+            <h2>{{event?.productName}}</h2>
+            <div>
+                <strong>Code:</strong> {{event?.productCode}}
+            </div>
+            <div>Price: ${{event?.productCost}}</div>
+            <div>
+                <strong>Description:</strong> {{event?.productDescription}}
+            </div>
+        </div>
+    </div>
+</div>
+
+
